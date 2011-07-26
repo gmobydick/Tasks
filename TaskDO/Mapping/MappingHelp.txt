@@ -1,0 +1,42 @@
+﻿
+
+
+Map(x => x.RecurrencePeriode).CustomType(typeof(Int32)).Not.Nullable();
+Map(x => x.SkipPeriod);
+
+References(x => x.Project);
+
+HasMany(x => x.Tasks);
+
+HasManyToMany(x => x.ParentBasins)
+.Cascade.SaveUpdate()
+.Inverse()
+.Table("BasinRef")
+.ParentKeyColumn("BasinId")
+.ChildKeyColumn("ParentBasinId");
+
+HasManyToMany(x => x.ChildBasins)
+.Cascade.SaveUpdate()
+.Table("BasinRef")
+.ParentKeyColumn("ParentBasinId")
+.ChildKeyColumn("BasinId");
+
+
+
+public abstract class AbstractTaskMap<T> : EntityMap<T> where T : Task
+{
+    public AbstractTaskMap()
+    {
+        References(x => x.Project);
+        HasManyToMany(x => x.Workers)
+            .Cascade.SaveUpdate();
+    }
+}
+
+
+public class TaskMap : AbstractTaskMap<Task>
+{
+    public TaskMap()
+    {
+    }
+}
