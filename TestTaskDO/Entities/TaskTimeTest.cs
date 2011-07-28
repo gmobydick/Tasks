@@ -73,12 +73,12 @@ namespace TestTaskDO.Entities
             var target = new TaskTime
                              {
                                  WorkedFrom = DateTime.Parse("2011-07-01 12:00:00"),
-                                 WorkedTo = DateTime.Parse("2011-07-01 12:45:00")
+                                 WorkedTo = DateTime.Parse("2011-07-02 11:45:00")
                              };
 
             double actual = target.WorkTime;
             
-            Assert.AreEqual(0.75, actual, "Wrong WorkTime calculation!");
+            Assert.AreEqual(23.75, actual, "Wrong WorkTime calculation!");
         }
     }
 }
