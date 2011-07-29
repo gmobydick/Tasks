@@ -10,6 +10,7 @@ namespace TaskDO.Mapping
             Map(x => x.RecurrencePeriode).CustomType(typeof(Int32)).Not.Nullable();
             Map(x => x.SkipPeriod);
             Map(x => x.NumberOfRepeats);
+
         }
     }
 }

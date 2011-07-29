@@ -3,14 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDO", "TaskDo\TaskDO.csproj", "{168F9C6F-E791-4712-B3D7-7367A7487516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskDO", "TestTaskDO\TestTaskDO.csproj", "{2E8A6C4C-B79E-4B18-943F-DEDE0F8ED58A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F0110FB4-8B90-4467-95CC-27F80E46FD98}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
 		Tasks.vsmdi = Tasks.vsmdi
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskMVC", "TaskMVC\TaskMVC.csproj", "{37233CE7-21F2-4DB9-B9A0-E340A252E488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskMVC.Tests", "TaskMVC.Tests\TaskMVC.Tests.csproj", "{874A7BC9-C0D5-4926-B541-900B90E4A670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDO.Tests", "TaskDO.Tests\TaskDO.Tests.csproj", "{2E8A6C4C-B79E-4B18-943F-DEDE0F8ED58A}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -25,6 +29,14 @@ Global
 		{168F9C6F-E791-4712-B3D7-7367A7487516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{168F9C6F-E791-4712-B3D7-7367A7487516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{168F9C6F-E791-4712-B3D7-7367A7487516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37233CE7-21F2-4DB9-B9A0-E340A252E488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37233CE7-21F2-4DB9-B9A0-E340A252E488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37233CE7-21F2-4DB9-B9A0-E340A252E488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37233CE7-21F2-4DB9-B9A0-E340A252E488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874A7BC9-C0D5-4926-B541-900B90E4A670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874A7BC9-C0D5-4926-B541-900B90E4A670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874A7BC9-C0D5-4926-B541-900B90E4A670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874A7BC9-C0D5-4926-B541-900B90E4A670}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2E8A6C4C-B79E-4B18-943F-DEDE0F8ED58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E8A6C4C-B79E-4B18-943F-DEDE0F8ED58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E8A6C4C-B79E-4B18-943F-DEDE0F8ED58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
