@@ -20,7 +20,7 @@ namespace TaskDO.Entities
         public virtual IList<Project> Projects { get; set; }
 
 
-        public void AddHoursTask(TaskTime taskTime)
+        public virtual void AddHoursTask(TaskTime taskTime)
         {
             TaskTimes.Add(taskTime);
         }

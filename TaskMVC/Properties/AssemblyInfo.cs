@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TaskMVC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Capgemini")]
-[assembly: AssemblyProduct("TaskMVC")]
-[assembly: AssemblyCopyright("Copyright © Capgemini 2011")]
+[assembly: AssemblyCompany("Cafebabe")]
+[assembly: AssemblyProduct("Tasker")]
+[assembly: AssemblyCopyright("Copyright © Cafebabe 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

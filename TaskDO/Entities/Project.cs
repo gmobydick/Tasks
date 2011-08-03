@@ -15,12 +15,12 @@ namespace TaskDO.Entities
         public virtual IList<Task> Tasks { get; set; }
         public virtual IList<Worker> Workers { get; set; }
 
-        public void AddTask(Task task)
+        public virtual void AddTask(Task task)
         {
             Tasks.Add(task);
         }
 
-        public void AddWorker(Worker worker)
+        public virtual void AddWorker(Worker worker)
         {
             Workers.Add(worker);
         }

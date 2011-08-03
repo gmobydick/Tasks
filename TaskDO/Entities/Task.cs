@@ -14,7 +14,7 @@ namespace TaskDO.Entities
         public virtual Project Project { get; set; }
         public virtual IList<Worker> Workers { get; set; }
 
-        public void AddWorker(Worker worker)
+        public virtual void AddWorker(Worker worker)
         {
             Workers.Add(worker);
         }
