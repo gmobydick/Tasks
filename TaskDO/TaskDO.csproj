@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\ProjectDAO.cs" />
     <Compile Include="Entities\RecurrencePeriode.cs" />
     <Compile Include="Entities\TaskTemplate.cs" />
     <Compile Include="Entities\TaskRecurrence.cs" />
@@ -56,7 +57,6 @@
     <Compile Include="Entities\TaskTime.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Task.cs" />
-    <Compile Include="Entities\TimeStampEventListener.cs" />
     <Compile Include="Mapping\AbstractTaskMap.cs" />
     <Compile Include="Mapping\TaskTimeMap.cs" />
     <Compile Include="Mapping\TaskRecurrenceMap.cs" />

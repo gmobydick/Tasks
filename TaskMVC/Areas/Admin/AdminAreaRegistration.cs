@@ -17,7 +17,7 @@ namespace TaskMVC.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { controller = "Project", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

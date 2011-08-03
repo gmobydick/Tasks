@@ -7,6 +7,7 @@ using HibernatingRhinos.Profiler.Appender.NHibernate;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Context;
+using NHibernate.Event;
 using NHibernate.Tool.hbm2ddl;
 using TaskDO.Entities;
 using log4net;
@@ -61,16 +62,16 @@ namespace TaskMVC
                               .ShowSql())
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Task>())
                 .ExposeConfiguration(c => c.SetProperty("current_session_context_class", "web"))
-                //.ExposeConfiguration(preUp =>
-                //{
-                //    preUp.EventListeners.PreUpdateEventListeners =
-                //        new IPreUpdateEventListener[] { new EntityListener() };
-                //})
-                //.ExposeConfiguration(preIn =>
-                //{
-                //    preIn.EventListeners.PreInsertEventListeners =
-                //        new IPreInsertEventListener[] { new EntityListener() };
-                //})
+                .ExposeConfiguration(preUp =>
+                {
+                    preUp.EventListeners.PreUpdateEventListeners =
+                        new IPreUpdateEventListener[] { new EntityListener() };
+                })
+                .ExposeConfiguration(preIn =>
+                {
+                    preIn.EventListeners.PreInsertEventListeners =
+                        new IPreInsertEventListener[] { new EntityListener() };
+                })
                 //.ExposeConfiguration(postUp =>
                 //{
                 //    postUp.EventListeners.PostUpdateEventListeners =

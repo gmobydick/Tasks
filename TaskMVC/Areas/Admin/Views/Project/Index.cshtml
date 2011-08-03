@@ -1,0 +1,34 @@
+﻿@using TaskMVC.Areas.Admin.Models
+@model ProjectModel
+@{
+    ViewBag.Title = "Projects";
+    var grid = new WebGrid(Model.AllProjects, defaultSort: "Name");
+}
+<h2>Projects</h2>
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "button black" })
+</p>
+@grid.GetHtml(
+    columns: grid.Columns(
+            grid.Column(header: "", format: (item) => new HtmlString(
+                                Html.ActionLink("Edit", "Edit", new { id = item.id }).ToString() + " | " +
+                                Html.ActionLink("Delete", "Delete", new { id = item.id }).ToString())
+                                ),
+                grid.Column(columnName: "Name"),
+                grid.Column(columnName: "Description"),
+                grid.Column(columnName: "CreatedAt", header: "Created"),
+                grid.Column(columnName: "CreatedBy", header: "Created"),
+                grid.Column(columnName: "UpdatedAt", header: "Updated"),
+                grid.Column(columnName: "UpdatedBy", header: "Created")
+    )
+)
+@*@grid.GetHtml(
+        columns: grid.Columns(
+                grid.Column(header: "", format: (item) => new HtmlString(
+                            Html.ActionLink("Edit", "Edit", new { id = item.id }).ToString() + " | " +
+                            Html.ActionLink("Delete", "Delete", new { id = item.id }).ToString())
+                            ),
+                grid.Column(columnName: "Name", header: "Node"),
+                grid.Column(columnName: "ElementType", header: "Type"), //, format: EnumExtra.GetEnumDescription(@item)),
+                grid.Column(columnName: "Description")
+            ))*@

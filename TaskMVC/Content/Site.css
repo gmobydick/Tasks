@@ -90,6 +90,42 @@ page width. Or, you can specify an exact pixel width. */
 
 #header
 {
+    width: 100%;
+    background-image: url(../Content/images/topRepeat.png);
+    height: 75px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#title
+{
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 15px;
+}
+
+
+#main
+{
+    margin: 10px 20px 10px 25px;
+    padding: 5px 10px;
+    background-color: #cccccc;
+}
+
+#footer
+{
+    padding-top: 5px;
+    height: 25px;
+    width: inherit;
+    text-align: center;
+    color: #aaaaaa;
+    background-color: #E5EBEE;
+}
+/*
+#header
+{
     position: relative;
     margin-bottom: 0px;
     color: #000;
@@ -113,6 +149,7 @@ page width. Or, you can specify an exact pixel width. */
     background-color: #fff;
     margin-bottom: 30px;
     _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+    /*
 }
 
 #footer
@@ -124,6 +161,65 @@ page width. Or, you can specify an exact pixel width. */
     margin: 0;
     font-size: .9em;
 }
+*/
+
+
+/* Styles for menu
+-----------------------------------------------------------*/
+
+#floatingMenu
+{
+    position: absolute;
+    top: 73px;
+    padding: 5px 3px;
+    background-color: #E5EBEE;
+    /* Black; */
+}
+
+#floatingMenu a
+{
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+
+#menuItems
+{
+    font-size: 11px;
+    text-decoration: none;
+    color: #7B9BAF;
+    float: left;
+    width: 120px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+#menuItems ul
+{
+    list-style: none;
+    padding: 0;
+    /*display: none;*/
+}
+
+#menuItems li
+{
+    cursor: pointer;
+    padding: 3px;
+    list-style: none;
+    font-weight: bold;
+}
+
+#menuItems ul ul li
+{
+    padding-left: 10px;
+}
+
+#menuImage
+{
+    float: right;
+    width: 18px;
+}
+
 
 /* TAB MENU   
 ----------------------------------------------------------*/

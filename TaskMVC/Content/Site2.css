@@ -1,0 +1,428 @@
+﻿
+body
+{
+    /*font-size: 75%;     font-family: Sans-Serif, Verdana, Tahoma, Arial, "Helvetica Neue" , Helvetica, Sans-Serif; /*     color: #232323;     background-color: #fff;     *     color: Black;     background-color: Black; */
+    font-family: Sans-Serif, Verdana, Arial;
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #F2F2F6;
+}
+
+table
+{
+    border: none;
+    border-collapse: collapse;
+}
+
+thead
+{
+    background-color: #000;
+    color: white;
+}
+
+th
+{
+    font-size: 11px;
+    padding: 5px;
+    text-align: left;
+}
+
+td
+{
+    padding: 5px;
+    text-align: left;
+    font-size: 9px;
+}
+
+textarea
+{
+    font-family: Sans-Serif, Times New Roman, Verdana;
+    font-size: 10px;
+}
+
+
+#header
+{
+    width: 100%;
+    /*background-image: url(../Content/images/topRepeat.png);*/
+    background-image: url(../Content/themes/ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png);
+    height: 75px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+#title
+{
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 15px;
+}
+
+#logindisplay
+{
+    position: absolute;
+    text-align: right;
+    top: 32px;
+    right: 0px;
+}
+
+#main
+{
+    margin: 10px 20px 10px 25px;
+    padding: 5px 10px;
+}
+
+#footer
+{
+    padding-top: 5px;
+    height: 25px;
+    width: inherit;
+    text-align: center;
+    color: #aaaaaa;
+    background-color: #000;
+}
+
+
+
+.black
+{
+    color: #000;
+}
+
+/* Styles for menu
+-----------------------------------------------------------*/
+
+#floatingMenu
+{
+    position: absolute;
+    top: 73px;
+    padding: 5px 3px;
+    background-color: #000;
+    /* Black; */
+}
+
+#floatingMenu a
+{
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+
+#menuItems
+{
+    font-size: 11px;
+    text-decoration: none;
+    color: #7B9BAF;
+    float: left;
+    width: 120px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+#menuItems ul
+{
+    list-style: none;
+    padding: 0;
+    /*display: none;*/
+}
+
+#menuItems li
+{
+    cursor: pointer;
+    padding: 3px;
+    list-style: none;
+    font-weight: bold;
+}
+
+#menuItems ul ul li
+{
+    padding-left: 10px;
+}
+
+#menuImage
+{
+    float: right;
+    width: 18px;
+}
+
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+.editor-label
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field
+{
+    margin: 0.5em 0 0 0;
+}
+
+div.editor-field input
+{
+    width: 250px;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Link styles
+---------------------------------------------------------*/
+
+.logolink A:link
+{
+    font-family: Impact;
+    font-size: 30px;
+    text-decoration: none;
+    color: #A6B9C7;
+}
+
+.logolink A:visited
+{
+    font-family: Impact;
+    font-size: 30px;
+    text-decoration: none;
+    color: #7B9BAF;
+    /* #A6B9C7; */
+}
+
+A:link
+{
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #7B9BAF;
+}
+
+A:visited
+{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #7B9BAF;
+}
+
+A:hover
+{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+
+li .button
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+label .button
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+p .button
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.button
+{
+    font-size: 11px;
+    padding: 5px 10px;
+    display: inline;
+    background: #777 url(button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /*text-shadow: 1px 1px #666;*/
+}
+
+.button:hover
+{
+    background-position: 0 -48px;
+}
+
+.button:active
+{
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 5px 10px 4px 10px;
+}
+
+.button.red
+{
+    background-color: #e50000;
+}
+
+.button.purple
+{
+    background-color: #9400bf;
+}
+
+.button.green
+{
+    background-color: #58aa00;
+}
+
+.button.orange
+{
+    background-color: #ff9c00;
+}
+
+.button.blue
+{
+    background-color: #2c6da0;
+}
+
+.button.black
+{
+    background-color: #333;
+}
+
+.button.white
+{
+    background-color: #fff;
+    color: #000;
+    text-shadow: 1px 1px #fff;
+}
+
+.button.small
+{
+    font-size: 75%;
+    padding: 3px 7px;
+}
+
+.button.small:hover
+{
+    background-position: 0 -50px;
+}
+
+.button.small:active
+{
+    padding: 4px 7px 2px;
+    background-position: 0 top;
+}
+
+.button.large
+{
+    font-size: 125%;
+    padding: 7px 12px;
+}
+
+.button.large:hover
+{
+    background-position: 0 -35px;
+}
+
+.button.large:active
+{
+    padding: 8px 12px 6px;
+    background-position: 0 top;
+}
+
+.button.blue.wide
+{
+    width: 100px;
+}
+
+A.linktext
+{
+    font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #7B9BAF;
+}
+
+.DataEntryStd_TextArea
+{
+    width: 400px;
+    height: 40px;
+    font-size: 9px;
+}
+
+.DataEntryStd_TextBox
+{
+    width: 150px;
+    font-size: 9px;
+}
+
+.even
+{
+    background-color: #F8F8F8;
+}
+
+/*
+.toplink A:active
+{
+    text-decoration: none;
+    color: Black;
+}
+.toplink A:hover
+{
+    text-decoration: none;
+    color: Black;
+    background: #f1f6f8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+*/
