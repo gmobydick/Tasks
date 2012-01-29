@@ -14,7 +14,7 @@ var floatingDiv = "#floatingMenu";
 
 
 $(document).ready(function () {
-    // Getting Viewport size and setting 
+    // Getting Viewport size and setting
     // div#main to fill all (-footer, header and mainPaddingAndMarginTopAndBottom)
     // div#floatingMenu to fill all (-footer and header)
     var viewportWidth = $(window).width() - floatingMenu;

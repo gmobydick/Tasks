@@ -14,6 +14,6 @@ namespace TaskMVC.Areas.Admin.Models
 
     public class TaskModel
     {
-        
+
     }
 }
