@@ -839,7 +839,7 @@
 .ui-autocomplete {
     position: absolute;
     cursor: default;
-}	
+}
 
 /* workarounds */
 
@@ -917,7 +917,7 @@ button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a l
 
 .ui-button-icons-only { width: 3.4em; }
 
-button.ui-button-icons-only { width: 3.7em; } 
+button.ui-button-icons-only { width: 3.7em; }
 
 /*button text element */
 

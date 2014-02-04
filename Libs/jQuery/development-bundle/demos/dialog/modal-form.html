@@ -32,7 +32,7 @@
 	$(function() {
 		// a workaround for a flaw in the demo system (http://dev.jqueryui.com/ticket/4375), ignore!
 		$( "#dialog:ui-dialog" ).dialog( "destroy" );
-		
+
 		var name = $( "#name" ),
 			email = $( "#email" ),
 			password = $( "#password" ),
@@ -68,7 +68,7 @@
 				return true;
 			}
 		}
-		
+
 		$( "#dialog-form" ).dialog({
 			autoOpen: false,
 			height: 300,
@@ -90,10 +90,10 @@
 
 					if ( bValid ) {
 						$( "#users tbody" ).append( "<tr>" +
-							"<td>" + name.val() + "</td>" + 
-							"<td>" + email.val() + "</td>" + 
+							"<td>" + name.val() + "</td>" +
+							"<td>" + email.val() + "</td>" +
 							"<td>" + password.val() + "</td>" +
-						"</tr>" ); 
+						"</tr>" );
 						$( this ).dialog( "close" );
 					}
 				},

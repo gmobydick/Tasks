@@ -35,7 +35,7 @@
 </ul>
 <div class="editsection" style="float:right;margin-left:5px;">[<a href="http://docs.jquery.com/action/edit/UI/API/1.8/Datepicker?section=2" title="Edit section: Localization">edit</a>]</div><a name="Localization"></a><h3>Localization</h3>
 <p>Datepicker provides support for localizing its content to cater for different languages
-	and date formats. Each localization is contained within its own file with the 
+	and date formats. Each localization is contained within its own file with the
 	language code appended to the name, e.g. <code>jquery.ui.datepicker-fr.js</code> for French.
 	The desired localization file should be include after the main datepicker code. They add their settings to the set
 	of available localizations and automatically apply them as defaults for all instances.</p>
@@ -43,7 +43,7 @@
 	indexed by language code, with '' referring to the default (English). Each entry is
 	an object with the following attributes: <code>closeText</code>, <code>prevText</code>,
 	<code>nextText</code>, <code>currentText</code>, <code>monthNames</code>,
-	<code>monthNamesShort</code>, <code>dayNames</code>, <code>dayNamesShort</code>, 
+	<code>monthNamesShort</code>, <code>dayNames</code>, <code>dayNamesShort</code>,
 	<code>dayNamesMin</code>, <code>weekHeader</code>, <code>dateFormat</code>,
 	<code>firstDay</code>, <code>isRTL</code>, <code>showMonthAfterYear</code>,
 	and <code>yearSuffix</code>.</p>
@@ -78,7 +78,7 @@ A simple jQuery UI Datepicker.<br />
   &lt;link href=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
   &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;&gt;&lt;/script&gt;
   &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
-  
+
   &lt;script&gt;
   $(document).ready(function() {
     $(&quot;#datepicker&quot;).datepicker();
@@ -86,7 +86,7 @@ A simple jQuery UI Datepicker.<br />
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body style="font-size:62.5%;"&gt;
-  
+
 &lt;div type=&quot;text&quot; id=&quot;datepicker&quot;&gt;&lt;/div&gt;
 
 &lt;/body&gt;
@@ -99,17 +99,17 @@ A simple jQuery UI Datepicker.<br />
   <div id="options">
     <h2 class="top-header">Options</h2>
     <ul class="options-list">
-      
+
 <li class="option" id="option-disabled">
   <div class="option-header">
     <h3 class="option-name"><a href="#option-disabled">disabled</a></h3>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -118,7 +118,7 @@ A simple jQuery UI Datepicker.<br />
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>disabled</code> option specified.
 </dt>
@@ -126,7 +126,7 @@ A simple jQuery UI Datepicker.<br />
 <pre><code>$( ".selector" ).datepicker({ disabled: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>disabled</code> option, after init.
 </dt>
@@ -148,10 +148,10 @@ $( ".selector" ).datepicker( "option", "disabled", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Selector, jQuery, Element</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">''</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -160,7 +160,7 @@ $( ".selector" ).datepicker( "option", "disabled", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>altField</code> option specified.
 </dt>
@@ -168,7 +168,7 @@ $( ".selector" ).datepicker( "option", "disabled", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ altField: '#actualDate' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>altField</code> option, after init.
 </dt>
@@ -190,10 +190,10 @@ $( ".selector" ).datepicker( "option", "altField", '#actualDate' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">''</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -202,7 +202,7 @@ $( ".selector" ).datepicker( "option", "altField", '#actualDate' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>altFormat</code> option specified.
 </dt>
@@ -210,7 +210,7 @@ $( ".selector" ).datepicker( "option", "altField", '#actualDate' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ altFormat: 'yy-mm-dd' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>altFormat</code> option, after init.
 </dt>
@@ -232,10 +232,10 @@ $( ".selector" ).datepicker( "option", "altFormat", 'yy-mm-dd' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">''</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -244,7 +244,7 @@ $( ".selector" ).datepicker( "option", "altFormat", 'yy-mm-dd' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>appendText</code> option specified.
 </dt>
@@ -252,7 +252,7 @@ $( ".selector" ).datepicker( "option", "altFormat", 'yy-mm-dd' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ appendText: '(yyyy-mm-dd)' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>appendText</code> option, after init.
 </dt>
@@ -274,10 +274,10 @@ $( ".selector" ).datepicker( "option", "appendText", '(yyyy-mm-dd)' );</code></p
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -286,7 +286,7 @@ $( ".selector" ).datepicker( "option", "appendText", '(yyyy-mm-dd)' );</code></p
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>autoSize</code> option specified.
 </dt>
@@ -294,7 +294,7 @@ $( ".selector" ).datepicker( "option", "appendText", '(yyyy-mm-dd)' );</code></p
 <pre><code>$( ".selector" ).datepicker({ autoSize: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>autoSize</code> option, after init.
 </dt>
@@ -316,10 +316,10 @@ $( ".selector" ).datepicker( "option", "autoSize", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">''</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -328,7 +328,7 @@ $( ".selector" ).datepicker( "option", "autoSize", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>buttonImage</code> option specified.
 </dt>
@@ -336,7 +336,7 @@ $( ".selector" ).datepicker( "option", "autoSize", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ buttonImage: '/images/datepicker.gif' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>buttonImage</code> option, after init.
 </dt>
@@ -358,10 +358,10 @@ $( ".selector" ).datepicker( "option", "buttonImage", '/images/datepicker.gif' )
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -370,7 +370,7 @@ $( ".selector" ).datepicker( "option", "buttonImage", '/images/datepicker.gif' )
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>buttonImageOnly</code> option specified.
 </dt>
@@ -378,7 +378,7 @@ $( ".selector" ).datepicker( "option", "buttonImage", '/images/datepicker.gif' )
 <pre><code>$( ".selector" ).datepicker({ buttonImageOnly: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>buttonImageOnly</code> option, after init.
 </dt>
@@ -400,10 +400,10 @@ $( ".selector" ).datepicker( "option", "buttonImageOnly", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'...'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -412,7 +412,7 @@ $( ".selector" ).datepicker( "option", "buttonImageOnly", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>buttonText</code> option specified.
 </dt>
@@ -420,7 +420,7 @@ $( ".selector" ).datepicker( "option", "buttonImageOnly", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ buttonText: 'Choose' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>buttonText</code> option, after init.
 </dt>
@@ -442,10 +442,10 @@ $( ".selector" ).datepicker( "option", "buttonText", 'Choose' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Function</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">$.datepicker.iso8601Week</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -454,7 +454,7 @@ $( ".selector" ).datepicker( "option", "buttonText", 'Choose' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>calculateWeek</code> option specified.
 </dt>
@@ -462,7 +462,7 @@ $( ".selector" ).datepicker( "option", "buttonText", 'Choose' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ calculateWeek: myWeekCalc });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>calculateWeek</code> option, after init.
 </dt>
@@ -484,10 +484,10 @@ $( ".selector" ).datepicker( "option", "calculateWeek", myWeekCalc );</code></pr
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -496,7 +496,7 @@ $( ".selector" ).datepicker( "option", "calculateWeek", myWeekCalc );</code></pr
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>changeMonth</code> option specified.
 </dt>
@@ -504,7 +504,7 @@ $( ".selector" ).datepicker( "option", "calculateWeek", myWeekCalc );</code></pr
 <pre><code>$( ".selector" ).datepicker({ changeMonth: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>changeMonth</code> option, after init.
 </dt>
@@ -526,10 +526,10 @@ $( ".selector" ).datepicker( "option", "changeMonth", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -538,7 +538,7 @@ $( ".selector" ).datepicker( "option", "changeMonth", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>changeYear</code> option specified.
 </dt>
@@ -546,7 +546,7 @@ $( ".selector" ).datepicker( "option", "changeMonth", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ changeYear: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>changeYear</code> option, after init.
 </dt>
@@ -568,10 +568,10 @@ $( ".selector" ).datepicker( "option", "changeYear", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'Done'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -580,7 +580,7 @@ $( ".selector" ).datepicker( "option", "changeYear", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>closeText</code> option specified.
 </dt>
@@ -588,7 +588,7 @@ $( ".selector" ).datepicker( "option", "changeYear", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ closeText: 'X' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>closeText</code> option, after init.
 </dt>
@@ -610,10 +610,10 @@ $( ".selector" ).datepicker( "option", "closeText", 'X' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">true</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -622,7 +622,7 @@ $( ".selector" ).datepicker( "option", "closeText", 'X' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>constrainInput</code> option specified.
 </dt>
@@ -630,7 +630,7 @@ $( ".selector" ).datepicker( "option", "closeText", 'X' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ constrainInput: false });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>constrainInput</code> option, after init.
 </dt>
@@ -652,10 +652,10 @@ $( ".selector" ).datepicker( "option", "constrainInput", false );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'Today'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -664,7 +664,7 @@ $( ".selector" ).datepicker( "option", "constrainInput", false );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>currentText</code> option specified.
 </dt>
@@ -672,7 +672,7 @@ $( ".selector" ).datepicker( "option", "constrainInput", false );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ currentText: 'Now' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>currentText</code> option, after init.
 </dt>
@@ -694,10 +694,10 @@ $( ".selector" ).datepicker( "option", "currentText", 'Now' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'mm/dd/yy'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -706,7 +706,7 @@ $( ".selector" ).datepicker( "option", "currentText", 'Now' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>dateFormat</code> option specified.
 </dt>
@@ -714,7 +714,7 @@ $( ".selector" ).datepicker( "option", "currentText", 'Now' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ dateFormat: 'yy-mm-dd' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>dateFormat</code> option, after init.
 </dt>
@@ -736,10 +736,10 @@ $( ".selector" ).datepicker( "option", "dateFormat", 'yy-mm-dd' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Array</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -748,7 +748,7 @@ $( ".selector" ).datepicker( "option", "dateFormat", 'yy-mm-dd' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>dayNames</code> option specified.
 </dt>
@@ -756,7 +756,7 @@ $( ".selector" ).datepicker( "option", "dateFormat", 'yy-mm-dd' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'] });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>dayNames</code> option, after init.
 </dt>
@@ -778,10 +778,10 @@ $( ".selector" ).datepicker( "option", "dayNames", ['Dimanche', 'Lundi', 'Mardi'
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Array</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -790,7 +790,7 @@ $( ".selector" ).datepicker( "option", "dayNames", ['Dimanche', 'Lundi', 'Mardi'
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>dayNamesMin</code> option specified.
 </dt>
@@ -798,7 +798,7 @@ $( ".selector" ).datepicker( "option", "dayNames", ['Dimanche', 'Lundi', 'Mardi'
 <pre><code>$( ".selector" ).datepicker({ dayNamesMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'] });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>dayNamesMin</code> option, after init.
 </dt>
@@ -820,10 +820,10 @@ $( ".selector" ).datepicker( "option", "dayNamesMin", ['Di', 'Lu', 'Ma', 'Me', '
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Array</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -832,7 +832,7 @@ $( ".selector" ).datepicker( "option", "dayNamesMin", ['Di', 'Lu', 'Ma', 'Me', '
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>dayNamesShort</code> option specified.
 </dt>
@@ -840,7 +840,7 @@ $( ".selector" ).datepicker( "option", "dayNamesMin", ['Di', 'Lu', 'Ma', 'Me', '
 <pre><code>$( ".selector" ).datepicker({ dayNamesShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'] });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>dayNamesShort</code> option, after init.
 </dt>
@@ -862,10 +862,10 @@ $( ".selector" ).datepicker( "option", "dayNamesShort", ['Dim', 'Lun', 'Mar', 'M
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Date, Number, String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">null</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -874,7 +874,7 @@ $( ".selector" ).datepicker( "option", "dayNamesShort", ['Dim', 'Lun', 'Mar', 'M
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>defaultDate</code> option specified.
 </dt>
@@ -882,7 +882,7 @@ $( ".selector" ).datepicker( "option", "dayNamesShort", ['Dim', 'Lun', 'Mar', 'M
 <pre><code>$( ".selector" ).datepicker({ defaultDate: +7 });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>defaultDate</code> option, after init.
 </dt>
@@ -904,10 +904,10 @@ $( ".selector" ).datepicker( "option", "defaultDate", +7 );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String, Number</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'normal'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -916,7 +916,7 @@ $( ".selector" ).datepicker( "option", "defaultDate", +7 );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>duration</code> option specified.
 </dt>
@@ -924,7 +924,7 @@ $( ".selector" ).datepicker( "option", "defaultDate", +7 );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ duration: 'slow' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>duration</code> option, after init.
 </dt>
@@ -946,10 +946,10 @@ $( ".selector" ).datepicker( "option", "duration", 'slow' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Number</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">0</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -958,7 +958,7 @@ $( ".selector" ).datepicker( "option", "duration", 'slow' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>firstDay</code> option specified.
 </dt>
@@ -966,7 +966,7 @@ $( ".selector" ).datepicker( "option", "duration", 'slow' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ firstDay: 1 });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>firstDay</code> option, after init.
 </dt>
@@ -988,10 +988,10 @@ $( ".selector" ).datepicker( "option", "firstDay", 1 );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1000,7 +1000,7 @@ $( ".selector" ).datepicker( "option", "firstDay", 1 );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>gotoCurrent</code> option specified.
 </dt>
@@ -1008,7 +1008,7 @@ $( ".selector" ).datepicker( "option", "firstDay", 1 );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ gotoCurrent: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>gotoCurrent</code> option, after init.
 </dt>
@@ -1030,10 +1030,10 @@ $( ".selector" ).datepicker( "option", "gotoCurrent", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1042,7 +1042,7 @@ $( ".selector" ).datepicker( "option", "gotoCurrent", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>hideIfNoPrevNext</code> option specified.
 </dt>
@@ -1050,7 +1050,7 @@ $( ".selector" ).datepicker( "option", "gotoCurrent", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ hideIfNoPrevNext: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>hideIfNoPrevNext</code> option, after init.
 </dt>
@@ -1072,10 +1072,10 @@ $( ".selector" ).datepicker( "option", "hideIfNoPrevNext", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1084,7 +1084,7 @@ $( ".selector" ).datepicker( "option", "hideIfNoPrevNext", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>isRTL</code> option specified.
 </dt>
@@ -1092,7 +1092,7 @@ $( ".selector" ).datepicker( "option", "hideIfNoPrevNext", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ isRTL: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>isRTL</code> option, after init.
 </dt>
@@ -1114,10 +1114,10 @@ $( ".selector" ).datepicker( "option", "isRTL", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Date, Number, String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">null</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1126,7 +1126,7 @@ $( ".selector" ).datepicker( "option", "isRTL", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>maxDate</code> option specified.
 </dt>
@@ -1134,7 +1134,7 @@ $( ".selector" ).datepicker( "option", "isRTL", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ maxDate: '+1m +1w' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>maxDate</code> option, after init.
 </dt>
@@ -1156,10 +1156,10 @@ $( ".selector" ).datepicker( "option", "maxDate", '+1m +1w' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Date, Number, String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">null</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1168,7 +1168,7 @@ $( ".selector" ).datepicker( "option", "maxDate", '+1m +1w' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>minDate</code> option specified.
 </dt>
@@ -1176,7 +1176,7 @@ $( ".selector" ).datepicker( "option", "maxDate", '+1m +1w' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ minDate: new Date(2007, 1 - 1, 1) });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>minDate</code> option, after init.
 </dt>
@@ -1198,10 +1198,10 @@ $( ".selector" ).datepicker( "option", "minDate", new Date(2007, 1 - 1, 1) );</c
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Array</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1210,7 +1210,7 @@ $( ".selector" ).datepicker( "option", "minDate", new Date(2007, 1 - 1, 1) );</c
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>monthNames</code> option specified.
 </dt>
@@ -1218,7 +1218,7 @@ $( ".selector" ).datepicker( "option", "minDate", new Date(2007, 1 - 1, 1) );</c
 <pre><code>$( ".selector" ).datepicker({ monthNames: ['Januar','Februar','Marts','April','Maj','Juni','Juli','August','September','Oktober','November','December'] });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>monthNames</code> option, after init.
 </dt>
@@ -1240,10 +1240,10 @@ $( ".selector" ).datepicker( "option", "monthNames", ['Januar','Februar','Marts'
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Array</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1252,7 +1252,7 @@ $( ".selector" ).datepicker( "option", "monthNames", ['Januar','Februar','Marts'
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>monthNamesShort</code> option specified.
 </dt>
@@ -1260,7 +1260,7 @@ $( ".selector" ).datepicker( "option", "monthNames", ['Januar','Februar','Marts'
 <pre><code>$( ".selector" ).datepicker({ monthNamesShort: ['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'] });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>monthNamesShort</code> option, after init.
 </dt>
@@ -1282,10 +1282,10 @@ $( ".selector" ).datepicker( "option", "monthNamesShort", ['Jan','Feb','Mar','Ap
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1294,7 +1294,7 @@ $( ".selector" ).datepicker( "option", "monthNamesShort", ['Jan','Feb','Mar','Ap
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>navigationAsDateFormat</code> option specified.
 </dt>
@@ -1302,7 +1302,7 @@ $( ".selector" ).datepicker( "option", "monthNamesShort", ['Jan','Feb','Mar','Ap
 <pre><code>$( ".selector" ).datepicker({ navigationAsDateFormat: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>navigationAsDateFormat</code> option, after init.
 </dt>
@@ -1324,10 +1324,10 @@ $( ".selector" ).datepicker( "option", "navigationAsDateFormat", true );</code><
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'Next'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1336,7 +1336,7 @@ $( ".selector" ).datepicker( "option", "navigationAsDateFormat", true );</code><
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>nextText</code> option specified.
 </dt>
@@ -1344,7 +1344,7 @@ $( ".selector" ).datepicker( "option", "navigationAsDateFormat", true );</code><
 <pre><code>$( ".selector" ).datepicker({ nextText: 'Later' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>nextText</code> option, after init.
 </dt>
@@ -1366,10 +1366,10 @@ $( ".selector" ).datepicker( "option", "nextText", 'Later' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Number, Array</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">1</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1378,7 +1378,7 @@ $( ".selector" ).datepicker( "option", "nextText", 'Later' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>numberOfMonths</code> option specified.
 </dt>
@@ -1386,7 +1386,7 @@ $( ".selector" ).datepicker( "option", "nextText", 'Later' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ numberOfMonths: [2, 3] });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>numberOfMonths</code> option, after init.
 </dt>
@@ -1408,10 +1408,10 @@ $( ".selector" ).datepicker( "option", "numberOfMonths", [2, 3] );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'Prev'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1420,7 +1420,7 @@ $( ".selector" ).datepicker( "option", "numberOfMonths", [2, 3] );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>prevText</code> option specified.
 </dt>
@@ -1428,7 +1428,7 @@ $( ".selector" ).datepicker( "option", "numberOfMonths", [2, 3] );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ prevText: 'Earlier' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>prevText</code> option, after init.
 </dt>
@@ -1450,10 +1450,10 @@ $( ".selector" ).datepicker( "option", "prevText", 'Earlier' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1462,7 +1462,7 @@ $( ".selector" ).datepicker( "option", "prevText", 'Earlier' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>selectOtherMonths</code> option specified.
 </dt>
@@ -1470,7 +1470,7 @@ $( ".selector" ).datepicker( "option", "prevText", 'Earlier' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ selectOtherMonths: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>selectOtherMonths</code> option, after init.
 </dt>
@@ -1492,10 +1492,10 @@ $( ".selector" ).datepicker( "option", "selectOtherMonths", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String, Number</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'+10'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1504,7 +1504,7 @@ $( ".selector" ).datepicker( "option", "selectOtherMonths", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>shortYearCutoff</code> option specified.
 </dt>
@@ -1512,7 +1512,7 @@ $( ".selector" ).datepicker( "option", "selectOtherMonths", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ shortYearCutoff: 50 });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>shortYearCutoff</code> option, after init.
 </dt>
@@ -1534,10 +1534,10 @@ $( ".selector" ).datepicker( "option", "shortYearCutoff", 50 );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'show'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1546,7 +1546,7 @@ $( ".selector" ).datepicker( "option", "shortYearCutoff", 50 );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showAnim</code> option specified.
 </dt>
@@ -1554,7 +1554,7 @@ $( ".selector" ).datepicker( "option", "shortYearCutoff", 50 );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ showAnim: 'fold' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showAnim</code> option, after init.
 </dt>
@@ -1576,10 +1576,10 @@ $( ".selector" ).datepicker( "option", "showAnim", 'fold' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1588,7 +1588,7 @@ $( ".selector" ).datepicker( "option", "showAnim", 'fold' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showButtonPanel</code> option specified.
 </dt>
@@ -1596,7 +1596,7 @@ $( ".selector" ).datepicker( "option", "showAnim", 'fold' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ showButtonPanel: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showButtonPanel</code> option, after init.
 </dt>
@@ -1618,10 +1618,10 @@ $( ".selector" ).datepicker( "option", "showButtonPanel", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Number</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">0</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1630,7 +1630,7 @@ $( ".selector" ).datepicker( "option", "showButtonPanel", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showCurrentAtPos</code> option specified.
 </dt>
@@ -1638,7 +1638,7 @@ $( ".selector" ).datepicker( "option", "showButtonPanel", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ showCurrentAtPos: 3 });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showCurrentAtPos</code> option, after init.
 </dt>
@@ -1660,10 +1660,10 @@ $( ".selector" ).datepicker( "option", "showCurrentAtPos", 3 );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1672,7 +1672,7 @@ $( ".selector" ).datepicker( "option", "showCurrentAtPos", 3 );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showMonthAfterYear</code> option specified.
 </dt>
@@ -1680,7 +1680,7 @@ $( ".selector" ).datepicker( "option", "showCurrentAtPos", 3 );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ showMonthAfterYear: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showMonthAfterYear</code> option, after init.
 </dt>
@@ -1702,10 +1702,10 @@ $( ".selector" ).datepicker( "option", "showMonthAfterYear", true );</code></pre
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'focus'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1714,7 +1714,7 @@ $( ".selector" ).datepicker( "option", "showMonthAfterYear", true );</code></pre
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showOn</code> option specified.
 </dt>
@@ -1722,7 +1722,7 @@ $( ".selector" ).datepicker( "option", "showMonthAfterYear", true );</code></pre
 <pre><code>$( ".selector" ).datepicker({ showOn: 'both' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showOn</code> option, after init.
 </dt>
@@ -1744,10 +1744,10 @@ $( ".selector" ).datepicker( "option", "showOn", 'both' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Options</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">{}</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1756,7 +1756,7 @@ $( ".selector" ).datepicker( "option", "showOn", 'both' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showOptions</code> option specified.
 </dt>
@@ -1764,7 +1764,7 @@ $( ".selector" ).datepicker( "option", "showOn", 'both' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ showOptions: {direction: 'up' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showOptions</code> option, after init.
 </dt>
@@ -1786,10 +1786,10 @@ $( ".selector" ).datepicker( "option", "showOptions", {direction: 'up' );</code>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1798,7 +1798,7 @@ $( ".selector" ).datepicker( "option", "showOptions", {direction: 'up' );</code>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showOtherMonths</code> option specified.
 </dt>
@@ -1806,7 +1806,7 @@ $( ".selector" ).datepicker( "option", "showOptions", {direction: 'up' );</code>
 <pre><code>$( ".selector" ).datepicker({ showOtherMonths: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showOtherMonths</code> option, after init.
 </dt>
@@ -1828,10 +1828,10 @@ $( ".selector" ).datepicker( "option", "showOtherMonths", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Boolean</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">false</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1840,7 +1840,7 @@ $( ".selector" ).datepicker( "option", "showOtherMonths", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>showWeek</code> option specified.
 </dt>
@@ -1848,7 +1848,7 @@ $( ".selector" ).datepicker( "option", "showOtherMonths", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ showWeek: true });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>showWeek</code> option, after init.
 </dt>
@@ -1870,10 +1870,10 @@ $( ".selector" ).datepicker( "option", "showWeek", true );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">Number</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">1</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1882,7 +1882,7 @@ $( ".selector" ).datepicker( "option", "showWeek", true );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>stepMonths</code> option specified.
 </dt>
@@ -1890,7 +1890,7 @@ $( ".selector" ).datepicker( "option", "showWeek", true );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ stepMonths: 3 });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>stepMonths</code> option, after init.
 </dt>
@@ -1912,10 +1912,10 @@ $( ".selector" ).datepicker( "option", "stepMonths", 3 );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'Wk'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1924,7 +1924,7 @@ $( ".selector" ).datepicker( "option", "stepMonths", 3 );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>weekHeader</code> option specified.
 </dt>
@@ -1932,7 +1932,7 @@ $( ".selector" ).datepicker( "option", "stepMonths", 3 );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ weekHeader: 'W' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>weekHeader</code> option, after init.
 </dt>
@@ -1954,10 +1954,10 @@ $( ".selector" ).datepicker( "option", "weekHeader", 'W' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">'c-10:c+10'</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -1966,7 +1966,7 @@ $( ".selector" ).datepicker( "option", "weekHeader", 'W' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>yearRange</code> option specified.
 </dt>
@@ -1974,7 +1974,7 @@ $( ".selector" ).datepicker( "option", "weekHeader", 'W' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ yearRange: '2000:2010' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>yearRange</code> option, after init.
 </dt>
@@ -1996,10 +1996,10 @@ $( ".selector" ).datepicker( "option", "yearRange", '2000:2010' );</code></pre>
     <dl>
       <dt class="option-type-label">Type:</dt>
         <dd class="option-type">String</dd>
-      
+
       <dt class="option-default-label">Default:</dt>
         <dd class="option-default">''</dd>
-      
+
     </dl>
   </div>
   <div class="option-description">
@@ -2008,7 +2008,7 @@ $( ".selector" ).datepicker( "option", "yearRange", '2000:2010' );</code></pre>
   <div class="option-examples">
     <h4>Code examples</h4>
     <dl class="option-examples-list">
-    
+
 <dt>
   Initialize a datepicker with the <code>yearSuffix</code> option specified.
 </dt>
@@ -2016,7 +2016,7 @@ $( ".selector" ).datepicker( "option", "yearRange", '2000:2010' );</code></pre>
 <pre><code>$( ".selector" ).datepicker({ yearSuffix: 'CE' });</code></pre>
 </dd>
 
-    
+
 <dt>
   Get or set the <code>yearSuffix</code> option, after init.
 </dt>
@@ -2036,7 +2036,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div id="events">
     <h2 class="top-header">Events</h2>
     <ul class="events-list">
-      
+
 <li class="event" id="event-create">
   <div class="event-header">
     <h3 class="event-name"><a href="#event-create">create</a></h3>
@@ -2051,7 +2051,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div class="event-examples">
     <h4>Code examples</h4>
     <dl class="event-examples-list">
-    
+
 <dt>
   Supply a callback function to handle the <code>create</code> event as an init option.
 </dt>
@@ -2061,7 +2061,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
 });</code></pre>
 </dd>
 
-    
+
 <dt>
   Bind to the <code>create</code> event by type: <code>datepickercreate</code>.
 </dt>
@@ -2090,7 +2090,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div class="event-examples">
     <h4>Code examples</h4>
     <dl class="event-examples-list">
-    
+
 <dt>
   Supply a callback function to handle the <code>beforeShow</code> event as an init option.
 </dt>
@@ -2119,7 +2119,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div class="event-examples">
     <h4>Code examples</h4>
     <dl class="event-examples-list">
-    
+
 <dt>
   Supply a callback function to handle the <code>beforeShowDay</code> event as an init option.
 </dt>
@@ -2148,7 +2148,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div class="event-examples">
     <h4>Code examples</h4>
     <dl class="event-examples-list">
-    
+
 <dt>
   Supply a callback function to handle the <code>onChangeMonthYear</code> event as an init option.
 </dt>
@@ -2177,7 +2177,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div class="event-examples">
     <h4>Code examples</h4>
     <dl class="event-examples-list">
-    
+
 <dt>
   Supply a callback function to handle the <code>onClose</code> event as an init option.
 </dt>
@@ -2206,7 +2206,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div class="event-examples">
     <h4>Code examples</h4>
     <dl class="event-examples-list">
-    
+
 <dt>
   Supply a callback function to handle the <code>onSelect</code> event as an init option.
 </dt>
@@ -2225,7 +2225,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   <div id="methods">
     <h2 class="top-header">Methods</h2>
     <ul class="methods-list">
-      
+
 <li class="method" id="method-destroy">
   <div class="method-header">
     <h3 class="method-name"><a href="#method-destroy">destroy</a></h3>
@@ -2523,7 +2523,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
 </p>
   <p>If a deeper level of customization is needed, there are widget-specific classes referenced within the jquery.ui.datepicker.css stylesheet that can be modified. These classes are highlighed in bold below.
 </p>
-    
+
   <h3>Sample markup with jQuery UI CSS Framework classes</h3>
   &lt;div id=&quot;ui-datepicker-div&quot; class=&quot;<strong>ui-datepicker</strong> ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible&quot;&gt;<br />
 &nbsp;&nbsp;&nbsp;&lt;div class=&quot;<strong>ui-datepicker-header</strong> ui-widget-header ui-helper-clearfix ui-corner-all&quot;&gt;<br />
@@ -2560,7 +2560,7 @@ $( ".selector" ).datepicker( "option", "yearSuffix", 'CE' );</code></pre>
   </div>
 </div>
 
-</p><!-- 
+</p><!--
 Pre-expand include size: 98753 bytes
 Post-expand include size: 196021 bytes
 Template argument size: 121355 bytes

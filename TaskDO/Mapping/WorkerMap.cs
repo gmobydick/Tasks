@@ -16,7 +16,7 @@ namespace TaskDO.Mapping
 
             HasManyToMany(x => x.Projects)
                 .Inverse();
-         
+
         }
     }
 }

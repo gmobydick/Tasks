@@ -4,8 +4,8 @@ using TaskDO.Entities;
 
 namespace TestTaskDO.Entities
 {
-    
-    
+
+
     /// <summary>
     ///This is a test class for TaskTimeTest and is intended
     ///to contain all TaskTimeTest Unit Tests
@@ -34,7 +34,7 @@ namespace TestTaskDO.Entities
         }
 
         #region Additional test attributes
-        // 
+        //
         //You can use the following additional attributes as you write your tests:
         //
         //Use ClassInitialize to run code before running the first test in the class
@@ -77,7 +77,7 @@ namespace TestTaskDO.Entities
                              };
 
             double actual = target.WorkTime;
-            
+
             Assert.AreEqual(23.75, actual, "Wrong WorkTime calculation!");
         }
     }

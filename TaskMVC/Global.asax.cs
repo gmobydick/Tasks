@@ -15,7 +15,7 @@ using log4net.Config;
 
 namespace TaskMVC
 {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+    // Note: For instructions on enabling IIS6 or IIS7 classic mode,
     // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : System.Web.HttpApplication
@@ -45,10 +45,10 @@ namespace TaskMVC
         {
             //Configure log4net
             XmlConfigurator.Configure();
-            
+
             //Handle Mobile devices. Detect and redirect to Mobile Area
             GlobalFilters.Filters.Add(new RedirectMobileDevicesToMobileAreaAttribute(), 1);
-            
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);

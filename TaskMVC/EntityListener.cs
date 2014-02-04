@@ -124,7 +124,7 @@ namespace TaskMVC
         //    }
         //}
 
-        //private void CreateAuditLogForAction(IEntityPersister persister, Entity entity, AuditAction action, string property, 
+        //private void CreateAuditLogForAction(IEntityPersister persister, Entity entity, AuditAction action, string property,
         //    object oldValue, object newValue)
         //{
         //    if(entity.GetType() != typeof(AuditLog))

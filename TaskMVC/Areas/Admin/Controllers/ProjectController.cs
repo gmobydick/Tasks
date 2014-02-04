@@ -34,7 +34,7 @@ namespace TaskMVC.Areas.Admin.Controllers
 
         public ActionResult Details(int id)
         {
-            
+
             return View(Model.SelectedProject);
         }
 
@@ -45,7 +45,7 @@ namespace TaskMVC.Areas.Admin.Controllers
         {
             Model.SelectedProject = new Project();
             return View(Model);
-        } 
+        }
 
         //
         // POST: /Admin/Project/Create
@@ -66,10 +66,10 @@ namespace TaskMVC.Areas.Admin.Controllers
                 return View(model);
             }
         }
-        
+
         //
         // GET: /Admin/Project/Edit/5
- 
+
         public ActionResult Edit(int id)
         {
             return View();
@@ -84,7 +84,7 @@ namespace TaskMVC.Areas.Admin.Controllers
             try
             {
                 // TODO: Add update logic here
- 
+
                 return RedirectToAction("Index");
             }
             catch
@@ -95,7 +95,7 @@ namespace TaskMVC.Areas.Admin.Controllers
 
         //
         // GET: /Admin/Project/Delete/5
- 
+
         public ActionResult Delete(int id)
         {
             return View();
@@ -110,7 +110,7 @@ namespace TaskMVC.Areas.Admin.Controllers
             try
             {
                 // TODO: Add delete logic here
- 
+
                 return RedirectToAction("Index");
             }
             catch
